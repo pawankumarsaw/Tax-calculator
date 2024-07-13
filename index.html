@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Income tax</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+            <div class="input-container">
+                <form>
+                <div class="formDiv">
+                    <p>
+                        Enter annual gross income &#63;
+                        
+                    </p>
+                    
+                    <input type="text"  class="gross-anual" value="" placeholder="Enter gross annual income ">
+                    <span class="grosserror">&#8505</span>
+                </div>
+                <div class="formDiv">
+                    <p>
+                        Enter extra income &#63;
+                    </p>
+                    <input type="text" class="extra-income" value="" placeholder="Extra income from other sources">
+                    <span class="extraerror">&#8505</span>
+                </div>
+                <div class="formDiv">
+                    <p>
+                        Enter age group &#63;
+                    </p>
+                    <select class="age-group">
+                        <option class="age" value="30">less than 40 </option>
+                        <option class="age" value="40">40 to 60</option>
+                        <option class="age" value="10">greater than 60</option>
+                    </select>
+                </div>
+                <div class="formDiv">
+                    <p>
+                        Enter total applicable deductions &#63;
+                    </p>
+                    <input type="text" class="total-deduction" value="" placeholder="Add total applicable deductions">
+                    <span class="totalerror">&#8505</span>
+                </div>
+                <button class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="result">
+                <h1>Your overall income will be</h1>
+                <h2 class="amount"> </h2>
+                <h3 >after deductions</h3>
+                <button class="close">close</button>
+            </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
